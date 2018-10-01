@@ -52,7 +52,7 @@ function saveUser(req, res){
                                 if(!userStored){
                                     res.status(404).send({message: 'No se ha registrado el usuario'});
                                 }else{
-                                    res.status(200).send({message: userStored});
+                                    res.status(200).send({user: userStored});
                                 }
                             }
                         });
